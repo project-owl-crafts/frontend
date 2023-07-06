@@ -26,7 +26,7 @@ body {
 }
 
 .main-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(https://picsum.photos/1280/720/);
   /* opacity: 0.7; */
   /* backdrop-filter: brightness(0.1); */
@@ -111,6 +111,11 @@ body {
   border-bottom-right-radius: 25px;
 }
 
+.refer-ip {
+    border-radius: 30px;
+    margin-top: 5px !important;
+}
+
 /* removing arrows from the otp feild in forgot-pass.html */
 /* Chrome, Safari, Edge, Opera */
 .auth-container .otp::-webkit-outer-spin-button,
@@ -186,6 +191,38 @@ body {
 .GFI-btn:focus img {
   transform: rotate(360deg);
   transition: all 0.5s ease-in-out;
+}
+
+.otp-btn {
+    position: absolute;
+    z-index: 1;
+    transform: translate(107.5px,-140px);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(50px);
+  border: none;
+  width: 70px;
+  height: 45px;
+  margin-top: 0px;
+  margin-inline: 0px;
+  padding: 10px;
+  border-radius: 22px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  font-size: 10px;
+  /* border: 1px solid rgba(0, 0, 0, 0.5); */
+  color: rgb(0 0 0 / 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.otp-btn:hover,
+.otp-btn:focus {
+  color: rgba(255, 255, 255, 0.7);
+  background: rgb(0 0 0 / 0.5);
 }
 
 .btn-png {

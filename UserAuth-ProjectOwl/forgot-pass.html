@@ -18,7 +18,8 @@
       </div>
       <!-- every i/o fields and buttons -->
       <div class="auth-container">
-        <input type="email" class="first-ip" placeholder="email" required />
+        <input type="text" class="first-ip" placeholder="email or mobile" required />
+        <button class="otp-btn">Request OTP</button>
         <input
           type="text"
           maxlength="6"
@@ -26,6 +27,7 @@
           placeholder="OTP"
           required
           onkeydown="return /[A-Z0-9]/i.test(event.key)"
+          oninput="this.value = this.value.toUpperCase()"
         />
         <!-- OTP feild only accepts alpha-numeric characters -->
         <hr style="visibility: hidden" />
