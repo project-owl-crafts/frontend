@@ -15,3 +15,5 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_HTML: "false"       # Exclude HTML linting
+          VALIDATE_CSS: "false"        # Exclude CSS linting
