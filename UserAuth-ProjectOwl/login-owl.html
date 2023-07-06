@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
-    <link rel="icon" href="owl-svgrepo-com.svg">
+    <link rel="icon" href="sources/owl-svgrepo-com.svg" />
     <title>Owl Login</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- card with all the contents -->
     <main class="main-container">
-        <!-- logo and title -->
-        <div class="main-text">
-            <img src="owl-svgrepo-com.svg" alt="">
-            <span>Project Owl</span>
+      <!-- logo and title -->
+      <div class="main-text">
+        <img src="sources/owl-svgrepo-com.svg" alt="" />
+        <span>Project Owl</span>
+      </div>
+      <!-- every i/o fields and buttons -->
+      <div class="auth-container">
+        <input type="email" class="first-ip" placeholder="email" required />
+        <input
+          type="password"
+          class="second-ip"
+          placeholder="password"
+          required
+        />
+        <span class="btn-container">
+          <button class="sb-btn">Login</button>
+          <button class="GFI-btn">
+            <img class="btn-png" src="sources/google.png" alt="" />
+          </button>
+          <button class="GFI-btn">
+            <img class="btn-png" src="sources/facebook.png" alt="" />
+          </button>
+          <button class="GFI-btn">
+            <img class="btn-png" src="sources/instagram.png" alt="" />
+          </button>
+        </span>
+        <div class="alt-container">
+          <span> or </span>
+          <a href="signup-owl.html">Join us</a>
+          <span>|</span>
+          <a href="forgot-pass.html">Forgot password?</a>
         </div>
-        <!-- every i/o fields and buttons -->
-        <div class="login-container">
-            <input type="email" class="first-ip" placeholder="email" required>
-            <input type="password" class="second-ip" placeholder="password" required>
-            <button id="sb-btn">Login</button>
-            <div class="alt-container">
-                <span>
-                    or
-                </span> 
-                <a href="signup-owl.html">Join us</a>
-                <span>|</span>
-                <a href="forgot-pass.html">Forgot password?</a>
-            </div>
-            <div>
-            </div>
-        </div>
+        <div></div>
+      </div>
     </main>
     <!-- main tag containing the bg image which is blurred to create the ambent effect -->
     <main class="main-ambient"></main>
-</body>
+  </body>
 </html>

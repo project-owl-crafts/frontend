@@ -78,7 +78,7 @@ body {
   margin: 20px;
 }
 
-.login-container {
+.auth-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,7 +86,7 @@ body {
   margin: 20px;
 }
 
-.login-container input {
+.auth-container input {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(50px);
   width: 250px;
@@ -97,14 +97,14 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.login-container .first-ip {
+.auth-container .first-ip {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
 
-.login-container .second-ip {
+.auth-container .second-ip {
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   border-bottom-left-radius: 25px;
@@ -113,27 +113,62 @@ body {
 
 /* removing arrows from the otp feild in forgot-pass.html */
 /* Chrome, Safari, Edge, Opera */
-.login-container .otp::-webkit-outer-spin-button,
-.login-container .otp::-webkit-inner-spin-button {
+.auth-container .otp::-webkit-outer-spin-button,
+.auth-container .otp::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
 /* Firefox */
-.login-container .otp[type="number"] {
+.auth-container .otp[type="number"] {
   /* -moz-appearance: textfield; */
   appearance: textfield;
 }
 
-.login-container input::placeholder {
+.auth-container input::placeholder {
   color: rgba(0 0 0 / 0.7);
 }
 
-.login-container button {
+.auth-container .btn-container {
+  display: flex;
+}
+
+.auth-container .sb-btn {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(50px);
   border: none;
-  width: 150px;
+  width: 100px;
+  height: 50px;
+  margin-top: 15px;
+  margin-inline: 5px;
+  padding: 10px;
+  border-radius: 70px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: rgb(0 0 0 / 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.auth-container .sb-btn:hover,
+.GFI-btn:hover {
+  color: rgba(255, 255, 255, 0.5);
+  background: rgb(0 0 0 / 0.5);
+}
+
+.auth-container .sb-btn:focus,
+.GFI-btn:focus {
+  color: rgba(255, 255, 255, 0.5);
+  background: rgb(0 0 0 / 0.5);
+}
+
+.GFI-btn {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(50px);
+  border: none;
+  width: 50px;
   height: 50px;
   margin-top: 15px;
   padding: 10px;
@@ -147,14 +182,15 @@ body {
   cursor: pointer;
 }
 
-.login-container button:hover {
-  color: rgba(255, 255, 255, 0.5);
-  background: rgb(0 0 0 / 0.5);
+.GFI-btn:hover img,
+.GFI-btn:focus img {
+  transform: rotate(360deg);
+  transition: all 0.5s ease-in-out;
 }
 
-.login-container button:focus {
-  color: rgba(255, 255, 255, 0.5);
-  background: rgb(0 0 0 / 0.5);
+.btn-png {
+  height: 20px;
+  width: 20px;
 }
 
 .alt-container {
