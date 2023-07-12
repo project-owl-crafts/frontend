@@ -27,7 +27,7 @@ body {
 
 .main-container {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(https://picsum.photos/1280/720/);
+    url(sources/set-origami-paper-art-paintbrush-watercolor-straw-orange-backdrop.jpg);
   /* opacity: 0.7; */
   /* backdrop-filter: brightness(0.1); */
   background-repeat: no-repeat;
@@ -45,7 +45,7 @@ body {
 .main-ambient {
   position: absolute;
   z-index: 0;
-  background: url(https://picsum.photos/1280/720/);
+  background: url(sources/set-origami-paper-art-paintbrush-watercolor-straw-orange-backdrop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -74,8 +74,21 @@ body {
 .main-text img {
   height: 80px;
   filter: invert(1);
+  animation-name: rotY;
+  animation-iteration-count: infinite;
+  animation-duration: 200s;
+  /* animation-delay: 2s; */
   text-shadow: 0px 0px 50px black;
   margin: 20px;
+}
+
+@keyframes rotY {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .auth-container {
@@ -87,8 +100,8 @@ body {
 }
 
 .auth-container input {
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(50px);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
   width: 250px;
   height: 30px;
   margin: 0px;
@@ -112,8 +125,8 @@ body {
 }
 
 .refer-ip {
-    border-radius: 30px;
-    margin-top: 5px !important;
+  border-radius: 30px;
+  margin-top: 5px !important;
 }
 
 /* removing arrows from the otp feild in forgot-pass.html */
@@ -139,8 +152,8 @@ body {
 }
 
 .auth-container .sb-btn {
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(50px);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
   border: none;
   width: 100px;
   height: 50px;
@@ -170,8 +183,8 @@ body {
 }
 
 .GFI-btn {
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(50px);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
   border: none;
   width: 50px;
   height: 50px;
@@ -189,16 +202,16 @@ body {
 
 .GFI-btn:hover img,
 .GFI-btn:focus img {
-  transform: rotate(360deg);
+  transform: rotateY(360deg);
   transition: all 0.5s ease-in-out;
 }
 
 .otp-btn {
-    position: absolute;
-    z-index: 1;
-    transform: translate(107.5px,-140px);
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(50px);
+  position: absolute;
+  z-index: 1;
+  transform: translate(107.5px, -140px);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
   border: none;
   width: 70px;
   height: 45px;
