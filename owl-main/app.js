@@ -16,7 +16,7 @@ app.use(express.json());
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 
-// Step 4:
+// Step 5:
 app.get('/', function(req, res) {
   res.render('page1');
 });
